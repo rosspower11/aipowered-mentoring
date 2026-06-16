@@ -3,8 +3,6 @@ import Script from "next/script";
 import "./globals.css";
 import "./mentoring.css";
 
-const CDN = "https://pub-557b5f7935344f8e91f1d0f115f8ec73.r2.dev";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://mentoring.aipowered.xyz"),
   title: "Private 1:1 Mentoring with Ross | AI Powered",
@@ -23,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${CDN}/web-preview-assets/social-preview.png`,
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "Private 1:1 Mentoring with Ross",
@@ -34,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Private 1:1 Mentoring with Ross | AI Powered",
     description: "Your business, your pace, Ross's full focus. Private 1:1 sessions.",
-    images: [`${CDN}/web-preview-assets/social-preview.png`],
+    images: ["/og.png"],
   },
 };
 
