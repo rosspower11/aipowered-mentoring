@@ -542,7 +542,7 @@ footer a{color:var(--text-grey);text-decoration:none;}
 .cohort-banner-date{font-family:var(--serif);font-size:clamp(34px,4.6vw,62px);line-height:1.05;letter-spacing:-1.6px;color:var(--white);font-weight:800;margin:0 auto 14px;text-transform:uppercase;}
 .cohort-banner-doors{font-family:var(--mono);font-size:14px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,107,90,0.95);margin:0 auto 18px;}
 .cohort-banner-sub{max-width:780px;margin:0 auto;font-size:clamp(18px,2.2vw,24px);line-height:1.45;color:var(--text-grey);font-weight:500;}
-.hero-cohort-badge{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:rgba(255,107,90,0.95);border:1px solid rgba(255,107,90,0.35);padding:8px 16px;border-radius:100px;margin-bottom:24px;}
+.hero-cohort-badge{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--accent);border:1px solid rgba(155,176,196,0.35);padding:8px 16px;border-radius:100px;margin-bottom:24px;}
 .marquee-item--summer{color:rgba(255,107,90,0.9);}
 .pricing-cohort-tag{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--text-dark-grey);margin-top:12px;}
 

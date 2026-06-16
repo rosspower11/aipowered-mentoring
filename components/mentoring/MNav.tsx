@@ -50,6 +50,7 @@ export default function MNav() {
           <a href="#difference" className="nav-pill" onClick={close}>The Difference</a>
           <a href="#cover" className="nav-pill" onClick={close}>What We Cover</a>
           <a href="#how" className="nav-pill" onClick={close}>How It Works</a>
+          <a href="#about-section" className="nav-pill" onClick={close}>Meet Ross</a>
           <a href="#pricing" className="nav-pill" onClick={close}>Pricing</a>
         </div>
       </div>

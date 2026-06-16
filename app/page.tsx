@@ -5,6 +5,7 @@ import MDifference from "@/components/mentoring/MDifference";
 import MCover from "@/components/mentoring/MCover";
 import MWhoFor from "@/components/mentoring/MWhoFor";
 import MHowItWorks from "@/components/mentoring/MHowItWorks";
+import MAbout from "@/components/mentoring/MAbout";
 import MPricing from "@/components/mentoring/MPricing";
 import MFAQ from "@/components/mentoring/MFAQ";
 import MFinalCTA from "@/components/mentoring/MFinalCTA";
@@ -22,6 +23,7 @@ export default function Home() {
       <MCover />
       <MWhoFor />
       <MHowItWorks />
+      <MAbout />
       <MPricing />
       <MFAQ />
       <MFinalCTA />
