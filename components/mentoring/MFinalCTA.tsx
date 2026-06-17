@@ -1,4 +1,4 @@
-import { BOOK_CTA, CHECKOUT_URL } from "@/lib/mentoring";
+import { BOOK_CTA } from "@/lib/mentoring";
 
 export default function MFinalCTA() {
   return (
@@ -14,7 +14,7 @@ export default function MFinalCTA() {
           <div className="final-detail"><strong>From</strong> $600</div>
           <div className="final-detail"><strong>Built</strong> around you</div>
         </div>
-        <a href={CHECKOUT_URL} className="btn-white anim">{BOOK_CTA}</a>
+        <a href="#investment" className="btn-white anim">{BOOK_CTA}</a>
       </div>
     </section>
   );

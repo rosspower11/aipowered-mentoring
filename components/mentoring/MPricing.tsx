@@ -11,11 +11,11 @@ const includes = [
 
 export default function MPricing() {
   return (
-    <section className="pricing" id="pricing">
+    <section className="pricing" id="investment">
       <div className="container">
         <div className="pricing-head anim" style={{ textAlign: "center" }}>
-          <div className="eyebrow" style={{ color: "var(--text-dark-grey)" }}>PRICING</div>
-          <h2 className="dark">Pick your time.</h2>
+          <div className="eyebrow" style={{ color: "var(--text-dark-grey)" }}>INVESTMENT</div>
+          <h2 className="dark">Your investment.</h2>
           <p className="pricing-cohort-tag anim">Private 1:1 with Ross · book the length that fits the job</p>
         </div>
 

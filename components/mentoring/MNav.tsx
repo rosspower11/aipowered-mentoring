@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BOOK_CTA, CHECKOUT_URL } from "@/lib/mentoring";
+import { BOOK_CTA } from "@/lib/mentoring";
 
 export default function MNav() {
   const [open, setOpen] = useState(false);
@@ -51,10 +51,10 @@ export default function MNav() {
           <a href="#cover" className="nav-pill" onClick={close}>What We Cover</a>
           <a href="#how" className="nav-pill" onClick={close}>How It Works</a>
           <a href="#about-section" className="nav-pill" onClick={close}>Meet Ross</a>
-          <a href="#pricing" className="nav-pill" onClick={close}>Pricing</a>
+          <a href="#investment" className="nav-pill" onClick={close}>Investment</a>
         </div>
       </div>
-      <a href={CHECKOUT_URL} className="nav-cta" onClick={close}>{BOOK_CTA}</a>
+      <a href="#investment" className="nav-cta" onClick={close}>{BOOK_CTA}</a>
       <button
         type="button"
         className={`nav-burger ${open ? "open" : ""}`}
