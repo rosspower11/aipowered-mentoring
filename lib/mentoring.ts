@@ -16,7 +16,7 @@ export const OUTCOMES = [
   { text: "Agents and scheduled tasks mapped to your actual week", icon: "agents" },
   { text: "Projects and Memory set up so Claude knows your business and voice", icon: "memory" },
   { text: "Clear data boundaries so you know exactly what is safe to connect", icon: "privacy" },
-  { text: "A session recording plus a written 30-day action plan", icon: "deliverable" },
+  { text: "Session recording plus a plan provided following the call", icon: "deliverable" },
 ] as const;
 
 export const FOLLOW_UP =

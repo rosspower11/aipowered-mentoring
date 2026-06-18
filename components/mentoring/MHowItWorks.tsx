@@ -8,7 +8,7 @@ const steps = [
   {
     n: "02",
     title: "We meet, screen to screen",
-    desc: "One focused hour with just the two of us. We get Cowork working, map your integrations, skills and agents, set your data boundaries, and you leave with a recording plus a 30-day action plan.",
+    desc: "One focused hour with just the two of us. We get Cowork working, map your integrations, skills and agents, set your data boundaries, and you leave with a recording plus a plan provided following the call.",
     meta: "1 hour · live",
   },
   {
