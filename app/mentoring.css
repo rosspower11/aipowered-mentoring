@@ -1,5 +1,71 @@
 /* Mentoring-specific additions layered on top of the shared design system. */
 
+/* Nav logo */
+.nav-logo {
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo-img {
+  display: block;
+  width: auto;
+  height: 28px;
+}
+.nav-logo-img--black {
+  display: none;
+}
+.nav--light .nav-logo-img--white {
+  display: none;
+}
+.nav--light .nav-logo-img--black {
+  display: block;
+}
+
+.nav--light {
+  background: rgba(245, 245, 243, 0.94);
+  border-bottom-color: var(--border-light);
+}
+.nav--light .nav-pill {
+  color: rgba(0, 0, 0, 0.45);
+}
+.nav--light .nav-pill:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+.nav--light .nav-pill.active {
+  background: var(--text-black);
+  color: var(--white);
+}
+.nav--light .nav-pills {
+  background: rgba(0, 0, 0, 0.05);
+}
+.nav--light .nav-cta {
+  background: var(--text-black);
+  color: var(--white);
+}
+.nav--light .nav-cta:hover {
+  background: #222;
+}
+.nav--light .nav-burger span {
+  background: var(--text-black);
+}
+.nav--light .nav-center.open {
+  background: rgba(245, 245, 243, 0.98);
+  border-bottom-color: var(--border-light);
+}
+.nav--light .nav-center.open .nav-pill:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 900px) {
+  .nav .nav-logo {
+    display: flex;
+    order: 0;
+    margin-right: auto;
+  }
+  .nav-logo-img {
+    height: 24px;
+  }
+}
+
 /* Outcomes grid */
 .m-outcomes {
   display: grid;

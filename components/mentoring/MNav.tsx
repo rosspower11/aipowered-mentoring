@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BOOK_CTA } from "@/lib/mentoring";
+import { BOOK_CTA, LOGO_BLACK, LOGO_WHITE } from "@/lib/mentoring";
 
 export default function MNav() {
   const [open, setOpen] = useState(false);
+  const [light, setLight] = useState(false);
 
   useEffect(() => {
     const navPills = document.querySelectorAll(".nav-pill");
@@ -17,6 +18,8 @@ export default function MNav() {
       })
       .filter((s): s is { pill: Element; target: Element } => s?.target != null);
 
+    const lightSections = document.querySelectorAll(".painpoints, .who-section, .pricing");
+
     const handleScroll = () => {
       const y = window.scrollY + 120;
       let active = sections[0];
@@ -25,8 +28,17 @@ export default function MNav() {
       });
       navPills.forEach((p) => p.classList.remove("active"));
       if (active) active.pill.classList.add("active");
+
+      const navLine = 56;
+      let overLight = false;
+      lightSections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= navLine && rect.bottom >= navLine) overLight = true;
+      });
+      setLight(overLight);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -39,12 +51,21 @@ export default function MNav() {
   const close = () => setOpen(false);
 
   return (
-    <nav className="nav">
-      <div className="nav-logo">
-        <span style={{ fontWeight: 700, fontSize: "0.95rem", letterSpacing: "-0.01em" }}>ai powered</span>
-        <span style={{ margin: "0 8px", opacity: 0.35, fontWeight: 300 }}>x</span>
-        <span style={{ fontWeight: 700, fontSize: "0.95rem", letterSpacing: "-0.01em" }}>Mentoring</span>
-      </div>
+    <nav className={`nav ${light ? "nav--light" : ""}`}>
+      <a href="#" className="nav-logo" aria-label="AI Powered">
+        <img
+          src={LOGO_WHITE}
+          alt="AI Powered"
+          className="nav-logo-img nav-logo-img--white"
+          height={28}
+        />
+        <img
+          src={LOGO_BLACK}
+          alt="AI Powered"
+          className="nav-logo-img nav-logo-img--black"
+          height={28}
+        />
+      </a>
       <div className={`nav-center ${open ? "open" : ""}`}>
         <div className="nav-pills">
           <a href="#difference" className="nav-pill" onClick={close}>The Difference</a>

@@ -8,6 +8,11 @@ export const BOOKING_IFRAME_SRC =
 export const BOOKING_IFRAME_ID = "83F088oFQDtOced2Sycu_1781785853325";
 export const BOOKING_EMBED_SCRIPT = "https://links.aipowered.xyz/js/form_embed.js";
 
+export const LOGO_WHITE =
+  "https://aipowered-assets.com/logos/AiPowered_Primary_White_TransparentBG_Large_slrq3u.png";
+export const LOGO_BLACK =
+  "https://aipowered-assets.com/logos/AiPowered_Primary_Black_TransparentBG_Small_cdmiyn.png";
+
 export const PRODUCT_NAME = "Claude Strategy Call";
 export const DURATION = "1 hour";
 export const PRICE = "£395";
