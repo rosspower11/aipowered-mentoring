@@ -4,36 +4,12 @@ export function OutcomeIcon({ id, className }: { id: string; className?: string 
   const props: IconProps = { className };
 
   switch (id) {
-    case "focus":
+    case "cowork":
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-          <circle cx="12" cy="12" r="3" />
-          <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1l2.1-2.1M17 7l2.1-2.1" />
-        </svg>
-      );
-    case "strategy":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-          <circle cx="12" cy="12" r="9" />
-          <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
-          <path d="m12 8 4 4-4 4-4-4 4-4z" />
-        </svg>
-      );
-    case "roadmap":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-          <path d="M4 19V5M4 19h16M8 19V9M12 19V13M16 19V7" />
-          <circle cx="8" cy="9" r="1.5" fill="currentColor" stroke="none" />
-          <circle cx="12" cy="13" r="1.5" fill="currentColor" stroke="none" />
-          <circle cx="16" cy="7" r="1.5" fill="currentColor" stroke="none" />
-        </svg>
-      );
-    case "value":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-          <circle cx="12" cy="12" r="9" />
-          <path d="M12 7v5l3 2" />
-          <path d="M8 16l8-8" />
+          <rect x="3" y="4" width="18" height="12" rx="2" />
+          <path d="M8 20h8M12 16v4" />
+          <path d="M8 9h8M8 12h5" />
         </svg>
       );
     case "files":
@@ -43,7 +19,7 @@ export function OutcomeIcon({ id, className }: { id: string; className?: string 
           <path d="M9 13h6M9 16h4" />
         </svg>
       );
-    case "connectors":
+    case "integrations":
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
           <circle cx="6" cy="12" r="2.5" />
@@ -52,14 +28,11 @@ export function OutcomeIcon({ id, className }: { id: string; className?: string 
           <path d="M8.4 11.2 15.6 7.2M8.4 12.8l7.2 4" />
         </svg>
       );
-    case "mcp":
+    case "skills":
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-          <rect x="3" y="3" width="7" height="7" rx="1.5" />
-          <rect x="14" y="3" width="7" height="7" rx="1.5" />
-          <rect x="3" y="14" width="7" height="7" rx="1.5" />
-          <rect x="14" y="14" width="7" height="7" rx="1.5" />
-          <path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4" />
+          <path d="M12 3 4 7v6c0 5 3.5 7.5 8 8 4.5-.5 8-3 8-8V7l-8-4z" />
+          <path d="m9 12 2 2 4-4" />
         </svg>
       );
     case "agents":
@@ -70,6 +43,29 @@ export function OutcomeIcon({ id, className }: { id: string; className?: string 
           <circle cx="10" cy="14" r="1" fill="currentColor" stroke="none" />
           <circle cx="14" cy="14" r="1" fill="currentColor" stroke="none" />
           <path d="M10 17h4" />
+        </svg>
+      );
+    case "memory":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+          <path d="M12 3a6 6 0 0 0-6 6v2a6 6 0 0 0 12 0V9a6 6 0 0 0-6-6z" />
+          <path d="M8 21h8M10 18h4" />
+          <path d="M12 11v3" />
+        </svg>
+      );
+    case "privacy":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+          <path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-4z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+    case "deliverable":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+          <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+          <rect x="9" y="3" width="6" height="4" rx="1" />
+          <path d="M9 12h6M9 16h4" />
         </svg>
       );
     default:
