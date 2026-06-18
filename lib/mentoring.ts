@@ -9,14 +9,14 @@ export const PRICE_USD = "$600";
 export const PRICE_GBP = "£445";
 
 export const OUTCOMES = [
-  "Your best focus to take now with Claude",
-  "A clear Claude strategy for your business",
-  "A roadmap for what you should do next",
-  "A clear direction on what will relieve your time and add more value",
-  "Cowork working with a clean file structure",
-  "The connectors that will have the highest value for you",
-  "Suggested connectors and MCPs to consider or build",
-  "A skills and agent roadmap tailored to how you work",
+  { text: "Your best focus to take now with Claude", icon: "focus" },
+  { text: "A clear Claude strategy for your business", icon: "strategy" },
+  { text: "A roadmap for what you should do next", icon: "roadmap" },
+  { text: "A clear direction on what will relieve your time and add more value", icon: "value" },
+  { text: "Cowork working with a clean file structure", icon: "files" },
+  { text: "The connectors that will have the highest value for you", icon: "connectors" },
+  { text: "Suggested connectors and MCPs to consider or build", icon: "mcp" },
+  { text: "A skills and agent roadmap tailored to how you work", icon: "agents" },
 ] as const;
 
 export const FOLLOW_UP =

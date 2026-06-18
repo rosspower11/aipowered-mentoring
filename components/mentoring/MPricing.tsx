@@ -28,9 +28,9 @@ export default function MPricing() {
               </div>
               <ul className="pricing-checklist">
                 {OUTCOMES.map((item) => (
-                  <li key={item}>
+                  <li key={item.text}>
                     <span className="pricing-tick" aria-hidden="true">✓</span>
-                    <span>{item}</span>
+                    <span>{item.text}</span>
                   </li>
                 ))}
               </ul>

@@ -1,4 +1,5 @@
 import { FOLLOW_UP, OUTCOMES } from "@/lib/mentoring";
+import { OutcomeIcon } from "@/components/mentoring/MOutcomeIcon";
 
 export default function MCover() {
   return (
@@ -9,9 +10,14 @@ export default function MCover() {
 
         <div className="m-outcomes anim" style={{ marginTop: 48 }}>
           {OUTCOMES.map((item, i) => (
-            <div key={item} className={`m-outcome anim d${(i % 4) + 1}`}>
-              <div className="m-outcome-num">{String(i + 1).padStart(2, "0")}</div>
-              <p>{item}</p>
+            <div key={item.text} className={`m-outcome anim d${(i % 4) + 1}`}>
+              <div className="m-outcome-top">
+                <div className="m-outcome-num">{String(i + 1).padStart(2, "0")}</div>
+                <div className="m-outcome-icon">
+                  <OutcomeIcon id={item.icon} />
+                </div>
+              </div>
+              <p>{item.text}</p>
             </div>
           ))}
         </div>
