@@ -234,3 +234,47 @@
 @media (min-width: 1100px) {
   .m-outcomes { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* Footer with large wordmark */
+.site-footer {
+  background: var(--bg-black);
+  border-top: 1px solid var(--border-dark);
+  padding: 0;
+  text-align: left;
+  overflow: hidden;
+}
+.site-footer-meta {
+  padding: 28px 48px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-dark);
+}
+.site-footer-meta p {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0;
+}
+.site-footer-meta a {
+  color: var(--text-grey);
+  text-decoration: none;
+}
+.site-footer-meta a:hover {
+  color: var(--white);
+}
+.site-footer-mark {
+  padding: 8px 32px 0;
+  line-height: 0;
+}
+.site-footer-mark img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.92;
+}
+
+@media (max-width: 900px) {
+  .site-footer-meta { padding: 24px; }
+  .site-footer-mark { padding: 4px 16px 0; }
+}
