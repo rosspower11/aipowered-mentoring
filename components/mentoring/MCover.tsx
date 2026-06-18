@@ -9,7 +9,7 @@ export default function MCover() {
 
         <div className="m-outcomes anim" style={{ marginTop: 48 }}>
           {OUTCOMES.map((item, i) => (
-            <div key={item} className={`m-outcome anim d${(i % 3) + 1}`}>
+            <div key={item} className={`m-outcome anim d${(i % 4) + 1}`}>
               <div className="m-outcome-num">{String(i + 1).padStart(2, "0")}</div>
               <p>{item}</p>
             </div>

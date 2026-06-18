@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const faqs = [
-  { q: "What happens on the strategy call?", a: "We spend one focused hour together. I'll help you identify your best focus with Claude right now, get Cowork working with a clean file structure, and map the connectors that will have the highest value for your business. You leave with clarity, not a vague to-do list." },
+  { q: "What happens on the strategy call?", a: "We spend one focused hour together. You'll leave with a clear Claude strategy, a roadmap for what to do next, direction on what saves time and adds value, Cowork set up with a clean file structure, connector and MCP recommendations, and a skills and agent roadmap. Real clarity, not a vague to-do list." },
   { q: "How is this different from the cohort?", a: "The cohort teaches the full ClaudeOS system to a group over six weeks. The strategy call is just you and me, on your business, in one hour. Many people start here to get clear, then join the cohort or book deeper 1:1 time once they know the path." },
   { q: "What happens after the call?", a: "On the back of the strategy call, we'll find the path that's best for you. That might mean more 1:1 sessions, the cohort, or simply running with what we set up. No pressure either way." },
   { q: "Do I need to be technical?", a: "No. I'm not a developer either. If you can describe your business and what you want Claude to do, we can get you set up." },

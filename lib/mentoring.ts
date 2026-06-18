@@ -10,8 +10,13 @@ export const PRICE_GBP = "£445";
 
 export const OUTCOMES = [
   "Your best focus to take now with Claude",
+  "A clear Claude strategy for your business",
+  "A roadmap for what you should do next",
+  "A clear direction on what will relieve your time and add more value",
   "Cowork working with a clean file structure",
   "The connectors that will have the highest value for you",
+  "Suggested connectors and MCPs to consider or build",
+  "A skills and agent roadmap tailored to how you work",
 ] as const;
 
 export const FOLLOW_UP =

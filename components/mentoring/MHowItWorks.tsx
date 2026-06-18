@@ -8,7 +8,7 @@ const steps = [
   {
     n: "02",
     title: "We meet, screen to screen",
-    desc: "One focused hour with just the two of us. We clarify your best next focus, get Cowork working with a clean file structure, and identify the connectors that matter most for you.",
+    desc: "One focused hour with just the two of us. We build your Claude strategy, map what to do next, get Cowork working, and leave you with connector, MCP, skills and agent roadmaps tailored to your business.",
     meta: "1 hour · live",
   },
   {

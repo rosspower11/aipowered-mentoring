@@ -3,9 +3,9 @@
 /* Outcomes grid */
 .m-outcomes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 960px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 .m-outcome {
@@ -15,15 +15,17 @@
   padding: 28px 24px;
 }
 .m-outcome-num {
-  font-family: var(--serif);
-  font-size: 34px;
+  font-family: var(--mono);
+  font-size: 11px;
   font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--accent);
   line-height: 1;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .m-outcome p {
-  font-size: 16px;
+  font-size: 15.5px;
   line-height: 1.65;
   color: var(--text-grey);
   margin: 0;
@@ -52,4 +54,8 @@
 
 @media (max-width: 900px) {
   .m-outcomes { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 1100px) {
+  .m-outcomes { grid-template-columns: repeat(4, 1fr); }
 }
