@@ -1,35 +1,25 @@
-/** 1:1 Private Mentoring with Ross — mentoring.aipowered.xyz */
+/** Claude Strategy Call — mentoring.aipowered.xyz */
 
 export const CHECKOUT_URL = "https://checkout.aipowered.xyz/private-mentoring";
-export const BOOK_CTA = "Book your session";
+export const BOOK_CTA = "Book your strategy call";
 
-/** USD prices come straight from the checkout. GBP shown as an approximate guide. */
-export const TIERS = [
-  {
-    id: "1hr",
-    hours: "1 hour",
-    usd: "$600",
-    gbp: "£445",
-    tag: "",
-    blurb: "One focused hour to crack a specific problem or get a workflow live.",
-    featured: false,
-  },
-  {
-    id: "2hr",
-    hours: "2 hours",
-    usd: "$1,100",
-    gbp: "£816",
-    tag: "Most popular",
-    blurb: "Room to go deeper — set things up properly and build more than one thing.",
-    featured: true,
-  },
-  {
-    id: "3hr",
-    hours: "3 hours",
-    usd: "$1,600",
-    gbp: "£1,187",
-    tag: "Best value",
-    blurb: "A proper working session to tackle the big stuff end to end, together.",
-    featured: false,
-  },
+export const PRODUCT_NAME = "Claude Strategy Call";
+export const DURATION = "1 hour";
+export const PRICE_USD = "$600";
+export const PRICE_GBP = "£445";
+
+export const OUTCOMES = [
+  "Your best focus to take now with Claude",
+  "Cowork working with a clean file structure",
+  "The connectors that will have the highest value for you",
+] as const;
+
+export const FOLLOW_UP =
+  "On the back of the strategy call, we'll find the path that's best for you.";
+
+export const SESSION_INCLUDES = [
+  "Live 1:1 with Ross, screen to screen",
+  "A focused agenda built around your business",
+  "Guided by the ClaudeOS methodology",
+  "Full session recording to keep",
 ] as const;

@@ -48,7 +48,7 @@ export default function MNav() {
       <div className={`nav-center ${open ? "open" : ""}`}>
         <div className="nav-pills">
           <a href="#difference" className="nav-pill" onClick={close}>The Difference</a>
-          <a href="#cover" className="nav-pill" onClick={close}>What We Cover</a>
+          <a href="#cover" className="nav-pill" onClick={close}>What You Get</a>
           <a href="#how" className="nav-pill" onClick={close}>How It Works</a>
           <a href="#about-section" className="nav-pill" onClick={close}>Meet Ross</a>
           <a href="#investment" className="nav-pill" onClick={close}>Investment</a>

@@ -1,43 +1,30 @@
-# mentoring.aipowered.xyz — Private 1:1 Mentoring with Ross
+# mentoring.aipowered.xyz — Claude Strategy Call
 
-Standalone Next.js landing page for Ross Power's private 1:1 mentoring. Same design system as the main Claude cohort site, repositioned around the personalised 1:1 experience.
+Standalone Next.js landing page for Ross Power's 1-hour Claude Strategy Call.
 
-## Structure
+## Offer
 
-- `app/page.tsx` — composes the sections
-- `components/mentoring/*` — section components
-- `lib/mentoring.ts` — pricing tiers (USD + GBP) and the checkout URL
-- `app/globals.css` — shared design system (fonts via `@import`)
-- `app/mentoring.css` — pricing-tier + level-pill styles layered on top
+**1 hour Claude Strategy Call · $600**
 
-## Pricing → checkout
+In this one hour you will walk away with:
 
-All CTAs point to **https://checkout.aipowered.xyz/private-mentoring**, where the buyer picks:
+- Your best focus to take now with Claude
+- Cowork working with a clean file structure
+- The connectors that will have the highest value for you
 
-| Length  | USD     | GBP (approx) |
-|---------|---------|--------------|
-| 1 hour  | $600    | £445         |
-| 2 hours | $1,100  | £816         |
-| 3 hours | $1,600  | £1,187       |
+On the back of the strategy call, we'll find the path that's best for you.
 
-Edit these in `lib/mentoring.ts`.
+All CTAs go to **https://checkout.aipowered.xyz/private-mentoring**.
+
+Edit pricing and copy in `lib/mentoring.ts`.
 
 ## Run locally
 
 ```bash
 npm install
 npm run dev
-# http://localhost:3000
 ```
 
-## Deploy to Vercel
+## Deploy
 
-1. This repo (`aipowered-mentoring`) → Vercel **New Project → import**. Auto-detects Next.js.
-2. Project **Settings → Domains → Add** `mentoring.aipowered.xyz`.
-3. Add the DNS record Vercel shows, at your DNS provider for `aipowered.xyz`:
-
-   | Type  | Name        | Target                 | Proxy / mode |
-   |-------|-------------|------------------------|--------------|
-   | CNAME | `mentoring` | `cname.vercel-dns.com` | DNS only     |
-
-4. Wait for Vercel to show the domain as **Valid** (SSL issued). Live at **https://mentoring.aipowered.xyz**.
+Push to `main` on [github.com/rosspower11/aipowered-mentoring](https://github.com/rosspower11/aipowered-mentoring). Vercel auto-deploys. Custom domain: `mentoring.aipowered.xyz`.

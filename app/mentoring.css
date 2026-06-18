@@ -1,134 +1,55 @@
 /* Mentoring-specific additions layered on top of the shared design system. */
 
-/* Methodology level pills */
-.m-levels {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-.m-level {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  color: var(--text-grey);
-  border: 1px solid var(--border-dark);
-  border-radius: 999px;
-  padding: 7px 16px;
-}
-
-/* 3-tier pricing grid */
-.m-tiers {
+/* Outcomes grid */
+.m-outcomes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 8px;
+  max-width: 960px;
+  margin: 0 auto;
 }
-.m-tier {
-  position: relative;
-  background: var(--bg-cream);
-  border: 1px solid var(--border-light);
-  border-radius: 18px;
-  padding: 34px 28px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.m-outcome {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-dark);
+  border-radius: 14px;
+  padding: 28px 24px;
 }
-.m-tier--featured {
-  background: var(--bg-black);
-  border-color: var(--bg-black);
-  transform: translateY(-8px);
-}
-.m-tier-tag {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-black);
-  background: var(--accent);
-  border-radius: 999px;
-  padding: 6px 14px;
-  white-space: nowrap;
-}
-.m-tier-hours {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-dark-grey);
+.m-outcome-num {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
   margin-bottom: 14px;
 }
-.m-tier--featured .m-tier-hours { color: var(--accent); }
-.m-tier-price {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 52px;
-  line-height: 1;
-  color: var(--text-black);
-}
-.m-tier--featured .m-tier-price { color: #fff; }
-.m-tier-gbp {
-  font-size: 14px;
-  color: var(--text-dark-grey);
-  margin-top: 6px;
-}
-.m-tier--featured .m-tier-gbp { color: var(--text-grey); }
-.m-tier-blurb {
-  font-size: 14.5px;
-  line-height: 1.6;
-  color: var(--text-dark-grey);
-  margin: 18px 0 26px;
-  max-width: 240px;
-}
-.m-tier--featured .m-tier-blurb { color: var(--off-white); }
-.m-tier-cta {
-  margin-top: auto;
-  width: 100%;
+.m-outcome p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-grey);
+  margin: 0;
 }
 
-/* Includes strip under the tiers */
-.m-includes {
-  margin-top: 44px;
+/* Follow-up line */
+.m-followup {
+  max-width: 640px;
+  margin: 40px auto 0;
   text-align: center;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--white);
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
 }
-.m-includes-label {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-dark-grey);
-  margin-bottom: 18px;
-}
-.m-includes-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 760px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px 28px;
+.m-followup--light {
+  margin: 28px 0 0;
   text-align: left;
-}
-.m-includes-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 15px;
-  color: var(--text-black);
-}
-.m-includes-tick {
-  flex: 0 0 auto;
-  color: #6f8f7c;
-  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-dark-grey);
+  border-left-color: var(--accent);
 }
 
 @media (max-width: 900px) {
-  .m-tiers { grid-template-columns: 1fr; gap: 28px; }
-  .m-tier--featured { transform: none; }
-  .m-includes-list { grid-template-columns: 1fr; }
+  .m-outcomes { grid-template-columns: 1fr; }
 }

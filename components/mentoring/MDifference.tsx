@@ -23,9 +23,9 @@ export default function MDifference() {
       <div className="container">
         <div className="painpoints-head anim">
           <div className="eyebrow" style={{ color: "var(--text-dark-grey)" }}>THE DIFFERENCE</div>
-          <h2 className="dark">Group gets you moving. One to one gets you there.</h2>
+          <h2 className="dark">Group teaches the system. A strategy call finds your path.</h2>
           <p className="painpoints-sub">
-            The cohort is brilliant for learning the system alongside other founders. But your business is specific, and some things are just faster, deeper and more useful when it&apos;s only the two of us.
+            The cohort is brilliant for learning ClaudeOS alongside other founders. But before you dive in, it helps to know exactly where Claude fits in your business, with Cowork set up and the right connectors mapped.
           </p>
         </div>
 

@@ -21,8 +21,8 @@ export default function MAbout() {
           <p>Years before any of this started, I worked at Accenture, one of the largest tech consulting companies in the world, training in design thinking and workshop facilitation.</p>
           <p>Across the short time I was there I ran well over 100 workshops and presented to more than 1,000 individuals along the way. My &ldquo;one thing&rdquo; through all of it was making tech and business simple and accessible to people, which is something I&apos;ve always loved doing and always wanted to turn into some kind of business of my own.</p>
           <p>I moved into startups (yes, I was a full techbro), leading product and engineering teams in blockchain, facilitating design sprints for C-suite executives, and most recently as Head of Product at a NYSE-listed education company.</p>
-          <p>When we work one to one, you get all of that pointed straight at your business: the prompts, skills, plugins, automations and workflows I use myself, applied live to your real work.</p>
-          <p>It&apos;s the most direct way to learn this, with me beside you the whole way.</p>
+          <p>When we work one to one on a strategy call, you get all of that pointed straight at your business: where to focus, how to set up Cowork, and which connectors actually matter for you.</p>
+          <p>One hour. Clear path forward. Then we figure out what comes next together.</p>
         </div>
       </div>
     </section>

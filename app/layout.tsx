@@ -5,18 +5,18 @@ import "./mentoring.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mentoring.aipowered.xyz"),
-  title: "Private 1:1 Mentoring with Ross | AI Powered",
+  title: "Claude Strategy Call with Ross | AI Powered",
   description:
-    "Book private 1:1 time with Ross. Your business, your pace, his full focus — guided by the ClaudeOS methodology. 1, 2 or 3 hour sessions.",
-  keywords: ["1:1 mentoring", "Claude mentoring", "AI mentoring", "private session", "Ross Power", "AI Powered"],
+    "Book a 1-hour Claude Strategy Call with Ross. Get clear on your focus, Cowork set up with a clean file structure, and the connectors that matter most. $600.",
+  keywords: ["Claude strategy call", "Claude mentoring", "Cowork setup", "private session", "Ross Power", "AI Powered"],
   icons: {
     icon: "https://aipowered-assets.com/logos/AiPowered_Submark_BlackBG_Small.jpg",
     apple: "https://aipowered-assets.com/logos/AiPowered_Submark_BlackBG_Small.jpg",
   },
   openGraph: {
-    title: "Private 1:1 Mentoring with Ross | AI Powered",
+    title: "Claude Strategy Call with Ross | AI Powered",
     description:
-      "Your business, your pace, Ross's full focus. Private 1:1 sessions guided by the ClaudeOS methodology.",
+      "One hour to get clear on Claude. Your focus, Cowork set up, and the connectors that matter most.",
     siteName: "AI Powered",
     type: "website",
     images: [
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Private 1:1 Mentoring with Ross",
+        alt: "Claude Strategy Call with Ross",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Private 1:1 Mentoring with Ross | AI Powered",
-    description: "Your business, your pace, Ross's full focus. Private 1:1 sessions.",
+    title: "Claude Strategy Call with Ross | AI Powered",
+    description: "One hour to get clear on Claude. Cowork set up. Connectors mapped. $600.",
     images: ["/og.png"],
   },
 };

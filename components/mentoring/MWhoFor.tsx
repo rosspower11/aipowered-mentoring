@@ -1,9 +1,9 @@
 export default function MWhoFor() {
   const cards = [
-    { title: "YOU'RE IN THE COHORT AND WANT TO GO DEEPER", desc: "You love the group sessions, but you want time on your specific business, your edge cases, the things that don't fit a group format." },
-    { title: "YOU HAVE A SPECIFIC PROJECT TO GET DONE", desc: "There's a real thing you need built or set up, and you'd rather do it once, properly, with an expert beside you than wing it alone." },
-    { title: "YOU LEARN BEST ONE TO ONE", desc: "Group settings aren't your thing. You want to ask anything, at any level, without holding the room up, and get answers tailored to you." },
-    { title: "YOUR TIME IS WORTH MORE THAN THE FEE", desc: "You'd rather pay to compress weeks of figuring it out into a focused session and get back to running your business." },
+    { title: "YOU'RE NOT SURE WHERE TO START WITH CLAUDE", desc: "You've got an account but you're not clear on what to focus on first. You want someone who's done this before to point you at the highest-value move." },
+    { title: "YOU WANT COWORK SET UP PROPERLY", desc: "Connectors, file structure, data safety. You'd rather get it right in an hour with an expert than trial-and-error it alone for weeks." },
+    { title: "YOU'RE IN THE COHORT AND WANT TO GO DEEPER", desc: "You love the group sessions, but you want an hour on your specific business, your tools, and your edge cases." },
+    { title: "YOUR TIME IS WORTH MORE THAN THE FEE", desc: "You'd rather pay for one focused hour of clarity than spend another month guessing your way through Claude." },
   ];
 
   return (
