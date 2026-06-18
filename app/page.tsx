@@ -12,6 +12,8 @@ import MFinalCTA from "@/components/mentoring/MFinalCTA";
 import Footer from "@/components/Footer";
 import ScrollAnimator from "@/components/ScrollAnimator";
 import BackToTop from "@/components/BackToTop";
+import Script from "next/script";
+import { BOOKING_EMBED_SCRIPT } from "@/lib/mentoring";
 
 export default function Home() {
   return (
@@ -30,6 +32,7 @@ export default function Home() {
       <Footer />
       <ScrollAnimator />
       <BackToTop />
+      <Script src={BOOKING_EMBED_SCRIPT} strategy="afterInteractive" />
     </>
   );
 }

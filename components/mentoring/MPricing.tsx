@@ -4,7 +4,6 @@ import {
   OUTCOMES,
   PRICE,
   PRODUCT_NAME,
-  SESSION_INCLUDES,
 } from "@/lib/mentoring";
 import MBookingEmbed from "@/components/mentoring/MBookingEmbed";
 
@@ -18,42 +17,26 @@ export default function MPricing() {
           <p className="pricing-cohort-tag anim">{DURATION} · {PRODUCT_NAME} · private with Ross</p>
         </div>
 
-        <div className="pricing-card anim d1">
-          <div className="pricing-card-grid">
+        <div className="m-invest-card anim d1">
+          <div className="m-invest-header">
             <div>
-              <div className="m-includes-label" style={{ textAlign: "left", marginBottom: 16 }}>
-                In this one hour you will walk away with
-              </div>
-              <ul className="pricing-checklist">
-                {OUTCOMES.map((item) => (
-                  <li key={item.text}>
-                    <span className="pricing-tick" aria-hidden="true">✓</span>
-                    <span>{item.text}</span>
-                  </li>
-                ))}
-              </ul>
-              <ul className="pricing-checklist" style={{ marginTop: 28 }}>
-                {SESSION_INCLUDES.map((item) => (
-                  <li key={item}>
-                    <span className="pricing-tick" aria-hidden="true">✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="m-followup m-followup--light">{FOLLOW_UP}</p>
+              <div className="m-invest-label">{PRODUCT_NAME}</div>
+              <div className="m-invest-meta">{DURATION} · private 1:1 with Ross</div>
             </div>
+            <div className="m-invest-price">{PRICE}</div>
+          </div>
 
-            <div className="pricing-side">
-              <div className="pricing-total">
-                <div className="pricing-total-label">{PRODUCT_NAME}</div>
-                <div className="pricing-total-amount">{PRICE}</div>
-              </div>
-
-              <div className="pricing-perday">
-                <div className="pricing-perday-amount">1</div>
-                <div className="pricing-perday-label">hour · private 1:1</div>
-              </div>
-            </div>
+          <div className="m-invest-body">
+            <div className="m-includes-label">In this one hour you will walk away with</div>
+            <ul className="pricing-checklist m-invest-checklist">
+              {OUTCOMES.map((item) => (
+                <li key={item.text}>
+                  <span className="pricing-tick" aria-hidden="true">✓</span>
+                  <span>{item.text}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="m-followup m-followup--light">{FOLLOW_UP}</p>
           </div>
         </div>
 

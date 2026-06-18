@@ -81,35 +81,88 @@
   border-left-color: var(--accent);
 }
 
+/* Investment card */
+.m-invest-card {
+  max-width: 920px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--text-black);
+  overflow: hidden;
+}
+.m-invest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 32px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-cream);
+}
+.m-invest-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dark-grey);
+  margin-bottom: 6px;
+}
+.m-invest-meta {
+  font-size: 15px;
+  color: var(--text-black);
+  font-weight: 500;
+}
+.m-invest-price {
+  font-family: var(--serif);
+  font-size: clamp(44px, 6vw, 56px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--text-black);
+  white-space: nowrap;
+}
+.m-invest-body {
+  padding: 32px;
+}
+.m-invest-checklist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 28px;
+  margin-top: 4px;
+}
+
 /* Booking embed */
 .m-booking {
-  max-width: 1080px;
-  margin: 40px auto 0;
+  max-width: 920px;
+  margin: 48px auto 0;
 }
 .m-booking-title {
   font-family: var(--serif);
-  font-size: clamp(28px, 4vw, 36px);
+  font-size: clamp(26px, 4vw, 32px);
   font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--text-black);
   text-align: center;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
-.m-booking-frame {
-  background: var(--white);
-  border: 1px solid var(--text-black);
-  border-radius: 12px;
-  overflow: hidden;
-  min-height: 680px;
-}
-.m-booking-frame iframe {
+.m-booking iframe {
   display: block;
-  min-height: 680px;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
 }
 
 @media (max-width: 900px) {
   .m-outcomes { grid-template-columns: 1fr; }
   .m-outcome { padding: 22px 20px; }
+  .m-invest-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+  .m-invest-body { padding: 24px; }
+  .m-invest-checklist { grid-template-columns: 1fr; }
 }
 
 @media (min-width: 1100px) {
