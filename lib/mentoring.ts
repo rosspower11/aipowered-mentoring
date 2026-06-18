@@ -1,12 +1,16 @@
 /** Claude Strategy Call — mentoring.aipowered.xyz */
 
-export const CHECKOUT_URL = "https://checkout.aipowered.xyz/private-mentoring";
-export const BOOK_CTA = "Book your strategy call";
+export const BOOK_CTA = "Book your call";
+export const BOOKING_HEADING = "Book Your Call Here";
+
+export const BOOKING_IFRAME_SRC =
+  "https://links.aipowered.xyz/widget/booking/83F088oFQDtOced2Sycu";
+export const BOOKING_IFRAME_ID = "83F088oFQDtOced2Sycu_1781785853325";
+export const BOOKING_EMBED_SCRIPT = "https://links.aipowered.xyz/js/form_embed.js";
 
 export const PRODUCT_NAME = "Claude Strategy Call";
 export const DURATION = "1 hour";
-export const PRICE_USD = "$600";
-export const PRICE_GBP = "£445";
+export const PRICE = "£395";
 
 export const OUTCOMES = [
   { text: "Cowork live on your real tools, tested and working", icon: "cowork" },

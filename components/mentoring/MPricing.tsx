@@ -1,14 +1,12 @@
 import {
-  BOOK_CTA,
-  CHECKOUT_URL,
   DURATION,
   FOLLOW_UP,
   OUTCOMES,
-  PRICE_GBP,
-  PRICE_USD,
+  PRICE,
   PRODUCT_NAME,
   SESSION_INCLUDES,
 } from "@/lib/mentoring";
+import MBookingEmbed from "@/components/mentoring/MBookingEmbed";
 
 export default function MPricing() {
   return (
@@ -48,19 +46,18 @@ export default function MPricing() {
             <div className="pricing-side">
               <div className="pricing-total">
                 <div className="pricing-total-label">{PRODUCT_NAME}</div>
-                <div className="pricing-total-amount">{PRICE_USD}</div>
-                <div className="pricing-total-gbp">≈ {PRICE_GBP}</div>
+                <div className="pricing-total-amount">{PRICE}</div>
               </div>
 
               <div className="pricing-perday">
                 <div className="pricing-perday-amount">1</div>
                 <div className="pricing-perday-label">hour · private 1:1</div>
               </div>
-
-              <a href={CHECKOUT_URL} className="btn-dark pricing-cta">{BOOK_CTA}</a>
             </div>
           </div>
         </div>
+
+        <MBookingEmbed />
       </div>
     </section>
   );

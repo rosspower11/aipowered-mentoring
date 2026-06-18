@@ -1,4 +1,4 @@
-import { BOOK_CTA, DURATION, PRICE_USD, PRODUCT_NAME } from "@/lib/mentoring";
+import { BOOK_CTA, DURATION, PRICE, PRODUCT_NAME } from "@/lib/mentoring";
 
 export default function MHero() {
   return (
@@ -15,7 +15,7 @@ export default function MHero() {
           <a href="#investment" className="btn-white">{BOOK_CTA}</a>
         </div>
         <p className="anim d3" style={{ marginTop: 18, fontFamily: "var(--mono)", fontSize: "0.72rem", letterSpacing: "0.06em", color: "var(--text-muted)", textTransform: "uppercase" }}>
-          {DURATION} · {PRODUCT_NAME} · {PRICE_USD}
+          {DURATION} · {PRODUCT_NAME} · {PRICE}
         </p>
       </div>
     </section>

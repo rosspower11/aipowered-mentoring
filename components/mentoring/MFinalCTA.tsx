@@ -1,4 +1,4 @@
-import { BOOK_CTA, DURATION, PRICE_USD, PRODUCT_NAME } from "@/lib/mentoring";
+import { BOOK_CTA, DURATION, PRICE, PRODUCT_NAME } from "@/lib/mentoring";
 
 export default function MFinalCTA() {
   return (
@@ -11,7 +11,7 @@ export default function MFinalCTA() {
         <div className="final-details anim">
           <div className="final-detail"><strong>Format</strong> 1:1, live</div>
           <div className="final-detail"><strong>Length</strong> {DURATION}</div>
-          <div className="final-detail"><strong>Investment</strong> {PRICE_USD}</div>
+          <div className="final-detail"><strong>Investment</strong> {PRICE}</div>
           <div className="final-detail"><strong>Call</strong> {PRODUCT_NAME}</div>
         </div>
         <a href="#investment" className="btn-white anim">{BOOK_CTA}</a>

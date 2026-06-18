@@ -81,6 +81,32 @@
   border-left-color: var(--accent);
 }
 
+/* Booking embed */
+.m-booking {
+  max-width: 1080px;
+  margin: 40px auto 0;
+}
+.m-booking-title {
+  font-family: var(--serif);
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-black);
+  text-align: center;
+  margin: 0 0 24px;
+}
+.m-booking-frame {
+  background: var(--white);
+  border: 1px solid var(--text-black);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 680px;
+}
+.m-booking-frame iframe {
+  display: block;
+  min-height: 680px;
+}
+
 @media (max-width: 900px) {
   .m-outcomes { grid-template-columns: 1fr; }
   .m-outcome { padding: 22px 20px; }

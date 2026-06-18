@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import "./mentoring.css";
 
@@ -7,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mentoring.aipowered.xyz"),
   title: "Claude Strategy Call with Ross | AI Powered",
   description:
-    "Book a 1-hour Claude Strategy Call with Ross. Get clear on your focus, Cowork set up with a clean file structure, and the connectors that matter most. $600.",
+    "Book a 1-hour Claude Strategy Call with Ross. Get Cowork set up, connectors mapped, and a clear plan forward. £395.",
   keywords: ["Claude strategy call", "Claude mentoring", "Cowork setup", "private session", "Ross Power", "AI Powered"],
   icons: {
     icon: "https://aipowered-assets.com/logos/AiPowered_Submark_BlackBG_Small.jpg",
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Claude Strategy Call with Ross | AI Powered",
-    description: "One hour to get clear on Claude. Cowork set up. Connectors mapped. $600.",
+    description: "One hour to get clear on Claude. Cowork set up. Connectors mapped. £395.",
     images: ["/og.png"],
   },
 };
@@ -43,30 +42,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        <Script id="affiliate-tracking" strategy="afterInteractive">{`
-(function() {
-  var params = new URLSearchParams(window.location.search);
-  var amId = params.get('am_id');
-  if (amId) {
-    sessionStorage.setItem('am_id', amId);
-  } else {
-    amId = sessionStorage.getItem('am_id');
-  }
-  if (!amId) return;
-  function applyAffiliate() {
-    document.querySelectorAll('a[href*="checkout.aipowered.xyz"]').forEach(function(link) {
-      var url = new URL(link.href);
-      url.searchParams.set('am_id', amId);
-      link.href = url.toString();
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyAffiliate);
-  } else {
-    applyAffiliate();
-  }
-})();
-`}</Script>
       </body>
     </html>
   );
