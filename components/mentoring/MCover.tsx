@@ -1,4 +1,4 @@
-import { FOLLOW_UP, OUTCOMES } from "@/lib/mentoring";
+import { DURATION, FOLLOW_UP, OUTCOMES } from "@/lib/mentoring";
 import { OutcomeIcon } from "@/components/mentoring/MOutcomeIcon";
 
 export default function MCover() {
@@ -6,7 +6,7 @@ export default function MCover() {
     <section className="offer" id="cover">
       <div className="container">
         <div className="eyebrow eyebrow-light anim" style={{ textAlign: "center" }}>WHAT YOU GET</div>
-        <h2 className="white anim" style={{ textAlign: "center" }}>In this one hour, you will walk away with:</h2>
+        <h2 className="white anim" style={{ textAlign: "center" }}>In {DURATION.toLowerCase()}, you will walk away with:</h2>
 
         <div className="m-outcomes anim" style={{ marginTop: 48 }}>
           {OUTCOMES.map((item, i) => (

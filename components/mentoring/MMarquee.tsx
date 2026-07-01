@@ -1,8 +1,8 @@
 const items = [
-  "CLAUDE STRATEGY CALL",
-  "ONE HOUR · ONE CLEAR PATH",
-  "CLAUDE STRATEGY CALL",
-  "ONE HOUR · ONE CLEAR PATH",
+  "CLAUDE SETUP & STRATEGY",
+  "GETTING AI RIGHT FOR YOU",
+  "CLAUDE SETUP & STRATEGY",
+  "GETTING AI RIGHT FOR YOU",
 ];
 
 export default function MMarquee() {

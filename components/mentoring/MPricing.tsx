@@ -27,7 +27,7 @@ export default function MPricing() {
           </div>
 
           <div className="m-invest-body">
-            <div className="m-includes-label">In this one hour you will walk away with</div>
+            <div className="m-includes-label">In {DURATION.toLowerCase()} you will walk away with</div>
             <ul className="pricing-checklist m-invest-checklist">
               {OUTCOMES.map((item) => (
                 <li key={item.text}>

@@ -1,18 +1,18 @@
-import { BOOK_CTA, DURATION, PRICE, PRODUCT_NAME } from "@/lib/mentoring";
+import { BOOK_CTA, DURATION, PRICE, PRODUCT_NAME, TAGLINE } from "@/lib/mentoring";
 
 export default function MFinalCTA() {
   return (
     <section className="final-cta">
       <div className="container">
-        <h2 className="anim">STOP GUESSING<br />WHERE TO START<br />WITH CLAUDE.</h2>
+        <h2 className="anim">CONFUSED ABOUT CLAUDE?<br />NOT AFTER<br />THIS CALL.</h2>
         <p className="sub anim" style={{ color: "var(--text-muted)", textAlign: "center", margin: "0 auto 20px" }}>
-          One hour. One clear path forward. Cowork working, connectors mapped, focus locked in.
+          {TAGLINE} Strong setup. Clear strategy. A blueprint to follow.
         </p>
         <div className="final-details anim">
           <div className="final-detail"><strong>Format</strong> 1:1, live</div>
           <div className="final-detail"><strong>Length</strong> {DURATION}</div>
           <div className="final-detail"><strong>Investment</strong> {PRICE}</div>
-          <div className="final-detail"><strong>Call</strong> {PRODUCT_NAME}</div>
+          <div className="final-detail"><strong>Session</strong> {PRODUCT_NAME}</div>
         </div>
         <a href="#investment" className="btn-white anim">{BOOK_CTA}</a>
       </div>

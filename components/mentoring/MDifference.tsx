@@ -1,19 +1,19 @@
 const cards = [
   {
-    title: "It's your work, not the room's",
-    desc: "No splitting attention with 20 other people. Every minute is spent on your business, your files, your goals, your questions.",
+    title: "Go in unsure. Come out with a plan.",
+    desc: "Most people arrive a bit confused about Claude, not sure what to focus on or whether they're doing it right. That's exactly what this call is for.",
   },
   {
-    title: "Your pace, your priorities",
-    desc: "No syllabus to keep up with and nothing to sit through. We start exactly where you are and go straight to what matters most to you.",
+    title: "Setup done properly, not guesswork",
+    desc: "We get Cowork working, your files organised, and your tools connected safely. Real setup on your business, not a generic walkthrough.",
   },
   {
-    title: "Direct access to Ross",
-    desc: "The full methodology, applied one to one, straight to your situation. You're not getting a recording, you're getting me in the room.",
+    title: "Strategy built for your business",
+    desc: "Not generic AI advice. A clear view of where Claude actually moves the needle for you, and what to ignore.",
   },
   {
-    title: "Move weeks faster",
-    desc: "The thing you'd circle for weeks alone, we solve together in an hour. You leave with it working, not with a to-do list.",
+    title: "A blueprint you can follow",
+    desc: "You leave with a strategy and a plan for what to do next, so you're not back to guessing the moment the call ends.",
   },
 ];
 
@@ -22,10 +22,10 @@ export default function MDifference() {
     <section className="painpoints" id="difference">
       <div className="container">
         <div className="painpoints-head anim">
-          <div className="eyebrow" style={{ color: "var(--text-dark-grey)" }}>THE DIFFERENCE</div>
-          <h2 className="dark">Group teaches the system. A strategy call finds your path.</h2>
+          <div className="eyebrow" style={{ color: "var(--text-dark-grey)" }}>THE PROMISE</div>
+          <h2 className="dark">Confused going in. Clear going out.</h2>
           <p className="painpoints-sub">
-            The cohort is brilliant for learning ClaudeOS alongside other founders. But before you dive in, it helps to know exactly where Claude fits in your business, with Cowork set up and the right connectors mapped.
+            This isn&apos;t a lecture on AI. It&apos;s 50 minutes focused entirely on getting Claude working properly for you and your business, with a setup, strategy and blueprint you can actually use.
           </p>
         </div>
 

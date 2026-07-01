@@ -19,6 +19,23 @@ export function OutcomeIcon({ id, className }: { id: string; className?: string 
           <path d="M9 13h6M9 16h4" />
         </svg>
       );
+    case "strategy":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+          <path d="m12 8 4 4-4 4-4-4 4-4z" />
+        </svg>
+      );
+    case "roadmap":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+          <path d="M4 19V5M4 19h16M8 19V9M12 19V13M16 19V7" />
+          <circle cx="8" cy="9" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="12" cy="13" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="16" cy="7" r="1.5" fill="currentColor" stroke="none" />
+        </svg>
+      );
     case "integrations":
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
